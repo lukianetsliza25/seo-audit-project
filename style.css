@@ -1,0 +1,13 @@
+:root { --main-color: #8a0518; --accent-color: #f5d9b3; }
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+.navbar-brand img { max-width: 150px; }
+.page-heading { 
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('img/11.jpg') center/cover;
+    color: white; padding: 60px 0; text-align: center; margin-bottom: 30px;
+}
+.product-card { background-color: var(--accent-color); border-radius: 10px; transition: 0.3s; height: 100%; border: none; }
+.product-card:hover { transform: translateY(-5px); shadow: 0 4px 15px rgba(0,0,0,0.1); }
+.product-card img { border-radius: 10px 10px 0 0; object-fit: cover; height: 250px; width: 100%; }
+.footer-custom { background-color: #212529; color: white; padding: 40px 0; margin-top: 50px; }
+.footer-link { color: #ccc; text-decoration: none; margin: 0 10px; }
+.footer-link:hover { color: white; }
