@@ -13,15 +13,31 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
         <div class="container">
-            <a class="navbar-brand" href="index.html"><img src="img/Logo.PNG" alt="Волинський смаколик лого"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+            <a class="navbar-brand" href="index.html">
+                <img src="img/Logo.PNG" alt="Волинський смаколик лого" class="navbar-logo">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Головна</a></li>
-                    <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li>
-                    <li class="nav-item"><a class="nav-link" href="payment.html">Оплата та доставка</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">Про нас</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contacts.html">Контакти</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Головна</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="catalog.html">Каталог</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="payment.html">Оплата та доставка</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Про нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html">Контакти</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -42,17 +58,91 @@
         </div>
     </div>
 
-    <footer class="footer-custom text-center">
+    <section class="events-section py-5 bg-light">
         <div class="container">
-            <div class="mb-3">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">Солодка палітра ваших подій</h2>
+                <p class="lead text-muted">Ми знаємо, як зробити ваш особливий день ще смачнішим</p>
+            </div>
+            
+            <div class="row g-4 text-center">
+                <div class="col-md-3 col-sm-6">
+                    <div class="event-card p-4 h-100 shadow-sm bg-white rounded-4">
+                        <div class="icon-box mb-3">
+                            <i class="fas fa-rings-wedding fa-3x" style="color: var(--main-red);"></i>
+                        </div>
+                        <h4 class="fw-bold">Весілля</h4>
+                        <p class="small text-muted">Від традиційних короваїв до сучасних багатоярусних тортів, що стануть окрасою свята.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 col-sm-6">
+                    <div class="event-card p-4 h-100 shadow-sm bg-white rounded-4">
+                        <div class="icon-box mb-3">
+                            <i class="fas fa-birthday-cake fa-3x" style="color: var(--main-red);"></i>
+                        </div>
+                        <h4 class="fw-bold">Дні народження</h4>
+                        <p class="small text-muted">Яскраві торти з улюбленими героями та безпечним складом для найменших іменинників.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 col-sm-6">
+                    <div class="event-card p-4 h-100 shadow-sm bg-white rounded-4">
+                        <div class="icon-box mb-3">
+                            <i class="fas fa-briefcase fa-3x" style="color: var(--main-red);"></i>
+                        </div>
+                        <h4 class="fw-bold">Корпоративи</h4>
+                        <p class="small text-muted">Брендоване печиво та солодощі з логотипом компанії для ваших колег та партнерів.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 col-sm-6">
+                    <div class="event-card p-4 h-100 shadow-sm bg-white rounded-4">
+                        <div class="icon-box mb-3">
+                            <i class="fas fa-dove fa-3x" style="color: var(--main-red);"></i>
+                        </div>
+                        <h4 class="fw-bold">Сімейні свята</h4>
+                        <p class="small text-muted">Ніжні десерти для хрестин, ювілеїв чи просто для затишної вечері у колі близьких.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-custom">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <img src="img/Logo.PNG" alt="Волинський смаколик" class="footer-logo">
+                <p class="small" style="color: #bbb;">Ми створюємо не просто солодощі, а частинку вашого свята. Понад 10 років досвіду та тисячі задоволених клієнтів у Луцьку.</p>
+            </div>
+            
+            <div class="col-lg-4 mb-4 mb-lg-0 text-lg-center">
+                <h4 class="footer-heading">Навігація</h4>
                 <a href="index.html" class="footer-link">Головна</a>
                 <a href="catalog.html" class="footer-link">Каталог</a>
+                <a href="about.html" class="footer-link">Про нас</a>
+                <a href="payment.html" class="footer-link">Оплата та доставка</a>
                 <a href="contacts.html" class="footer-link">Контакти</a>
-                <a href="sale-cakes.html">Знижки на торти!</a>
             </div>
-            <p>© 2026 Волинський смаколик. Всі права захищені.</p>
+            
+            <div class="col-lg-4 text-lg-end">
+                <h4 class="footer-heading">Приєднуйтесь до нас</h4>
+                <div class="social-icons mb-4">
+                    <a href="https://instagram.com/natali_lukianets" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="viber://chat?number=%2B380954029428" target="_blank"><i class="fab fa-viber"></i></a>
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                </div>
+                <p class="mb-1"><i class="fas fa-phone-alt me-2" style="color: var(--gold);"></i> (095) 402 94 28</p>
+                <p><i class="fas fa-envelope me-2" style="color: var(--gold);"></i> lukanecelizaveta@gmail.com</p>
+            </div>
         </div>
-    </footer>
+        
+        <div class="footer-bottom text-center">
+            <p>© 2026 Кондитерська студія "Волинський смаколик". Всі права захищені | Луцьк</p>
+        </div>
+    </div>
+</footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
