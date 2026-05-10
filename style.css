@@ -115,6 +115,7 @@ h1, h2, h3, .navbar-brand {
 
 .footer-logo {
     max-width: 150px;
+    max-height: 80px;
     filter: brightness(0) invert(1); /* Робить лого білим, якщо воно темне */
     margin-bottom: 20px;
 }
