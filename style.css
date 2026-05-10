@@ -22,8 +22,6 @@ h1, h2, h3, .navbar-brand {
 /* Навігація */
 /* Фіксуємо розмір логотипа для всіх сторінок */
 .navbar-logo {
-    height: 70px; /* Оптимальна висота */
-    width: auto;
     transition: transform 0.3s ease;
 }
 
@@ -78,13 +76,18 @@ h1, h2, h3, .navbar-brand {
 }
 
 /* Картки товарів */
-.product-card {
-    border: none;
-    border-radius: 15px;
-    background: var(--light-bg);
-    overflow: hidden;
-    transition: 0.4s;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+/* Це змусить зображення підлаштовуватися під ширину колонки */
+.product-card img {
+    width: 100%;       /* Зображення розтягнеться на всю ширину картки */
+    height: auto;      /* Висота підлаштується автоматично, щоб не було спотворень */
+    display: block;
+    object-fit: cover; /* Якщо захочете фіксовану висоту, це допоможе не обрізати краї */
+}
+
+/* Окремо для логотипа, щоб він не став гігантським */
+.navbar-logo, .footer-logo {
+    width: auto !important; 
+    height: 70px !important; /* Повертаємо вашу попередню висоту */
 }
 
 .product-card:hover {
@@ -114,8 +117,6 @@ h1, h2, h3, .navbar-brand {
 }
 
 .footer-logo {
-    max-width: 150px;
-    max-height: 80px;
     filter: brightness(0) invert(1); /* Робить лого білим, якщо воно темне */
     margin-bottom: 20px;
 }
