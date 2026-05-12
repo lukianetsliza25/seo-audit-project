@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Торти та короваї на замовлення Луцьк — Волинський смаколик </title>
     <meta name="description" content="Шукаєте смачне доповнення свята? Студія Волинський смаколик виготовляє натуральні торти та короваї у Луцьку. Ручна робота та свіжі продукти. Замовляйте зараз!">
+    <!-- Покращення LCP: попереднє завантаження головного банера -->
+    <link rel="preload" as="image" href="img/30.webp">
+    <!-- Покращення FCP: попереднє завантаження критичного шрифту FontAwesome -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="canonical" href="https://lukianetsliza25.github.io/seo-audit-project/index.html" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -74,118 +78,117 @@
         <div class="container"><h1>Кондитерська студія "Волинський смаколик" у Луцьку</h1></div>
     </header>
 
-    <div class="container my-5">
-        <div class="row align-items-center">
-            <div class="col-md-6">
-                <picture>
-                <source srcset="img/30.webp" type="image/webp">
-                <img src="img/30.jpg" 
-                    class="img-fluid rounded shadow" 
-                    alt="Асортимент кондитерських виробів Волинський смаколик" 
-                    width="900" 
-                    height="600">
-                </picture>
-            </div>
-            <div class="col-md-6">
-                <h2>Випікаємо з любов'ю та натуральних продуктів</h2>
-                <p>Ви можете обрати готові <a href="catalog-torty.html">дизайни тортів</a>, 
-                    замовити <a href="catalog-korovai.html">короваї на весілля</a> 
-                    та <a href="catalog-pechyvo.html">імбирне печиво</a>. 
-                    Ми використовуємо лише натуральні вершки та бельгійський шоколад.
-                </p>
-                <a href="catalog.html" class="btn btn-danger">Переглянути каталог солодощів</a>
+    <main>
+        <div class="container my-5">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <picture>
+                    <source srcset="img/30.webp" type="image/webp">
+                    <img src="img/30.jpg" 
+                        class="img-fluid rounded shadow" 
+                        alt="Асортимент кондитерських виробів Волинський смаколик" 
+                        width="900" 
+                        height="600">
+                    </picture>
+                </div>
+                <div class="col-md-6">
+                    <h2>Випікаємо з любов'ю та натуральних продуктів</h2>
+                    <p>Ви можете обрати готові <a href="catalog-torty.html">дизайни тортів</a>, 
+                        замовити <a href="catalog-korovai.html">короваї на весілля</a> 
+                        та <a href="catalog-pechyvo.html">імбирне печиво</a>. 
+                        Ми використовуємо лише натуральні вершки та бельгійський шоколад.
+                    </p>
+                    <a href="catalog.html" class="btn btn-danger">Переглянути каталог солодощів</a>
+                </div>
             </div>
         </div>
-    </div>
 
-    <section class="events-section py-5 bg-light">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="display-5 fw-bold">Солодка палітра ваших подій</h2>
-                <p class="lead text-muted">Ми знаємо, як зробити ваш особливий день ще смачнішим</p>
-            </div>
-            
-            <div class="row g-4 text-center">
-                <div class="col-md-3 col-sm-6">
-                    <div class="event-card p-4 h-100 shadow-sm bg-white rounded-4">
-                        <div class="icon-box mb-3">
-                            <i class="fas fa-rings-wedding fa-3x" style="color: var(--main-red);"></i>
-                        </div>
-                        <h3 class="fw-bold">Весілля</h3>
-                        <p class="small text-muted">Від традиційних короваїв до сучасних багатоярусних тортів, що стануть окрасою свята.</p>
-                    </div>
+        <section class="events-section py-5 bg-light">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="display-5 fw-bold">Солодка палітра ваших подій</h2>
+                    <p class="lead text-muted">Ми знаємо, як зробити ваш особливий день ще смачнішим</p>
                 </div>
                 
-                <div class="col-md-3 col-sm-6">
-                    <div class="event-card p-4 h-100 shadow-sm bg-white rounded-4">
-                        <div class="icon-box mb-3">
-                            <i class="fas fa-birthday-cake fa-3x" style="color: var(--main-red);"></i>
+                <div class="row g-4 text-center">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="event-card p-4 h-100 shadow-sm bg-white rounded-4">
+                            <div class="icon-box mb-3">
+                                <i class="fas fa-rings-wedding fa-3x" style="color: var(--main-red);"></i>
+                            </div>
+                            <h3 class="fw-bold">Весілля</h3>
+                            <p class="small text-muted">Від традиційних короваїв до сучасних багатоярусних тортів, що стануть окрасою свята.</p>
                         </div>
-                        <h3 class="fw-bold">Дні народження</h3>
-                        <p class="small text-muted">Яскраві торти з улюбленими героями та безпечним складом для найменших іменинників.</p>
                     </div>
-                </div>
-                
-                <div class="col-md-3 col-sm-6">
-                    <div class="event-card p-4 h-100 shadow-sm bg-white rounded-4">
-                        <div class="icon-box mb-3">
-                            <i class="fas fa-briefcase fa-3x" style="color: var(--main-red);"></i>
+                    
+                    <div class="col-md-3 col-sm-6">
+                        <div class="event-card p-4 h-100 shadow-sm bg-white rounded-4">
+                            <div class="icon-box mb-3">
+                                <i class="fas fa-birthday-cake fa-3x" style="color: var(--main-red);"></i>
+                            </div>
+                            <h3 class="fw-bold">Дні народження</h3>
+                            <p class="small text-muted">Яскраві торти з улюбленими героями та безпечним складом для найменших іменинників.</p>
                         </div>
-                        <h3 class="fw-bold">Корпоративи</h3>
-                        <p class="small text-muted">Брендоване печиво та солодощі з логотипом компанії для ваших колег та партнерів.</p>
                     </div>
-                </div>
-                
-                <div class="col-md-3 col-sm-6">
-                    <div class="event-card p-4 h-100 shadow-sm bg-white rounded-4">
-                        <div class="icon-box mb-3">
-                            <i class="fas fa-dove fa-3x" style="color: var(--main-red);"></i>
+                    
+                    <div class="col-md-3 col-sm-6">
+                        <div class="event-card p-4 h-100 shadow-sm bg-white rounded-4">
+                            <div class="icon-box mb-3">
+                                <i class="fas fa-briefcase fa-3x" style="color: var(--main-red);"></i>
+                            </div>
+                            <h3 class="fw-bold">Корпоративи</h3>
+                            <p class="small text-muted">Брендоване печиво та солодощі з логотипом компанії для ваших колег та партнерів.</p>
                         </div>
-                        <h3 class="fw-bold">Сімейні свята</h3>
-                        <p class="small text-muted">Ніжні десерти для хрестин, ювілеїв чи просто для затишної вечері у колі близьких.</p>
+                    </div>
+                    
+                    <div class="col-md-3 col-sm-6">
+                        <div class="event-card p-4 h-100 shadow-sm bg-white rounded-4">
+                            <div class="icon-box mb-3">
+                                <i class="fas fa-dove fa-3x" style="color: var(--main-red);"></i>
+                            </div>
+                            <h3 class="fw-bold">Сімейні свята</h3>
+                            <p class="small text-muted">Ніжні десерти для хрестин, ювілеїв чи просто для затишної вечері у колі близьких.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="events-section py-5 bg-light">
-        <div class="container">
-            </div>
-    </section>
+        </section>
+        
 
-    <section class="gallery-section py-5">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="fw-bold">Популярні вибори наших клієнтів</h2>
-                <p class="text-muted">Перегляньте наші найкращі роботи</p>
+        <section class="gallery-section py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold">Популярні вибори наших клієнтів</h2>
+                    <p class="text-muted">Перегляньте наші найкращі роботи</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <picture>
+                            <source srcset="img/39.webp" type="image/webp">
+                            <img src="img/39.jpg" 
+                                class="img-fluid rounded shadow-sm" 
+                                alt="Весільний коровай" 
+                                width="736" 
+                                height="981" 
+                                loading="lazy">
+                        </picture>
+                    </div>
+                    <div class="col-md-4">
+                        <picture>
+                            <source srcset="img/38.webp" type="image/webp">
+                            <img src="img/38.jpg" class="img-fluid rounded shadow-sm" alt="Святковий торт" width="720" height="960" loading="lazy">
+                        </picture>
+                    </div>
+                    <div class="col-md-4">
+                        <picture>
+                            <source srcset="img/84.webp" type="image/webp">
+                            <img src="img/84.jpg" class="img-fluid rounded shadow-sm" alt="Подарункове печиво" width="736" height="730" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
             </div>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <picture>
-                        <source srcset="img/39.webp" type="image/webp">
-                        <img src="img/39.jpg" 
-                             class="img-fluid rounded shadow-sm" 
-                             alt="Весільний коровай" 
-                             width="736" 
-                             height="981" 
-                             loading="lazy">
-                    </picture>
-                </div>
-                <div class="col-md-4">
-                    <picture>
-                        <source srcset="img/38.webp" type="image/webp">
-                        <img src="img/38.jpg" class="img-fluid rounded shadow-sm" alt="Святковий торт" width="720" height="960" loading="lazy">
-                    </picture>
-                </div>
-                <div class="col-md-4">
-                    <picture>
-                        <source srcset="img/84.webp" type="image/webp">
-                        <img src="img/84.jpg" class="img-fluid rounded shadow-sm" alt="Подарункове печиво" width="736" height="730" loading="lazy">
-                    </picture>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer class="footer-custom">
         <div class="container">
@@ -200,7 +203,7 @@
                              height="80" 
                              loading="lazy">
                     </picture>
-                    <p class="small" style="color: #bbb;">Ми створюємо не просто солодощі, а частинку вашого свята. Понад 10 років досвіду та тисячі задоволених клієнтів у Луцьку.</p>
+                    <p class="small">Ми створюємо не просто солодощі, а частинку вашого свята. Понад 10 років досвіду та тисячі задоволених клієнтів у Луцьку.</p>
                 </div>
                 
                 <div class="col-lg-4 mb-4 mb-lg-0 text-lg-center">

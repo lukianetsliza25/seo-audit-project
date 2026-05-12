@@ -111,7 +111,7 @@ h1, h2, h3, .navbar-brand {
 /* ФУТЕР */
 .footer-custom {
     background-color: #1a1a1a;
-    color: #f8f8f8;
+    color: #ffffff; /* Було #f8f8f8 - зробили чистий білий */
     padding: 60px 0 20px;
     margin-top: 80px;
 }
@@ -129,7 +129,7 @@ h1, h2, h3, .navbar-brand {
 }
 
 .footer-link {
-    color: #bbb;
+    color: #e0e0e0; /* Було #bbb - тепер світліше для контрасту */
     text-decoration: none;
     display: block;
     margin-bottom: 10px;
@@ -137,7 +137,7 @@ h1, h2, h3, .navbar-brand {
 }
 
 .footer-link:hover {
-    color: white;
+    color: var(--gold); /* Золотистий при наведенні виглядає краще */
     padding-left: 5px;
 }
 
@@ -159,7 +159,7 @@ h1, h2, h3, .navbar-brand {
     margin-top: 40px;
     padding-top: 20px;
     font-size: 0.9rem;
-    color: #777;
+    color: #d1d1d1; /* Було #777 - тепер значно краще читається */
 }
 /* Стилі для нового блоку подій */
 .events-section {
