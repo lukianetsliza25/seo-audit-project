@@ -1,190 +1,41 @@
-/* Підключення красивих шрифтів */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
-:root {
-    --main-red: #8a0518;      /* Фірмовий вишневий */
-    --gold: #c5a059;          /* Золотистий акцент */
-    --light-bg: #fffcf9;      /* Кремовий фон */
-    --dark-text: #2d2d2d;
-}
-
-body {
-    font-family: 'Montserrat', Arial, sans-serif;    background-color: #fff;
-    color: var(--dark-text);
-    line-height: 1.6;
-}
-
-/* Заголовки */
-h1, h2, h3, .navbar-brand {
-    font-family: 'Playfair Display', serif;
-    color: var(--main-red);
-}
-
 /* Навігація */
-/* Фіксуємо розмір логотипа для всіх сторінок */
-.navbar-logo {
-    transition: transform 0.3s ease;
-}
-
-.navbar-logo:hover {
-    transform: scale(1.05); /* Легкий ефект при наведенні */
-}
-
-/* Налаштування самого меню */
-.navbar {
-    background-color: #ffffff !important;
-    padding: 0.5rem 0;
-}
+.navbar { background-color: #ffffff !important; padding: 0.5rem 0; }
+.navbar-logo, .footer-logo { height: 70px !important; width: auto !important; transition: transform 0.3s; }
+.navbar-logo:hover { transform: scale(1.05); }
 
 .nav-link {
-    font-weight: 600;
-    color: #2d2d2d !important;
-    text-transform: uppercase;
-    font-size: 0.9rem;
-    padding: 0.5rem 1.2rem !important;
-    transition: 0.3s;
+    font-weight: 600; color: #2d2d2d !important; text-transform: uppercase;
+    font-size: 0.9rem; padding: 0.5rem 1.2rem !important; transition: 0.3s;
 }
+.nav-link:hover, .nav-link.active { color: var(--main-red) !important; }
+.nav-link.active { border-bottom: 2px solid var(--main-red); }
 
-.nav-link:hover {
-    color: #8a0518 !important; /* Ваш фірмовий вишневий колір */
-}
-
-/* Стиль для активної сторінки (опціонально) */
-.nav-link.active {
-    color: #8a0518 !important;
-    border-bottom: 2px solid #8a0518;
-}
-
-
-
-
-
-
-
-/* Шапка сторінки (Banner) */
+/* Банер */
 .page-heading {
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('img/11.webp') center/cover;
-    padding: 80px 0;
-    color: white;
-    text-align: center;
-    margin-bottom: 40px;
+    padding: 80px 0; color: white; text-align: center; margin-bottom: 40px;
 }
+.page-heading h1 { color: white; font-size: 3rem; letter-spacing: 2px; }
 
-.page-heading h1 {
-    color: white;
-    font-size: 3rem;
-    letter-spacing: 2px;
-}
+/* Картки */
+.product-card { transition: 0.3s; }
+.product-card:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(138, 5, 24, 0.15); }
+.product-card img { width: 100%; height: 250px; display: block; object-fit: cover; }
 
-/* Картки товарів */
-/* Це змусить зображення підлаштовуватися під ширину колонки */
-.product-card img {
-    width: 100%;       /* Зображення розтягнеться на всю ширину картки */
-    height: auto;      /* Висота підлаштується автоматично, щоб не було спотворень */
-    display: block;
-    object-fit: cover; /* Якщо захочете фіксовану висоту, це допоможе не обрізати краї */
-}
+.btn-danger {border: none; border-radius: 50px; padding: 10px 25px; font-weight: 600; }
 
-/* Окремо для логотипа, щоб він не став гігантським */
-.navbar-logo, .footer-logo {
-    width: auto !important; 
-    height: 70px !important; /* Повертаємо вашу попередню висоту */
-}
+/* Футер */
+.footer-custom { background-color: #1a1a1a; color: #ffffff; padding: 60px 0 20px; margin-top: 80px; }
+.footer-logo { filter: brightness(0) invert(1); margin-bottom: 20px; }
+.footer-heading { font-family: Georgia, serif; color: var(--gold); margin-bottom: 25px; font-size: 1.4rem; }
+.footer-link { color: #e0e0e0; text-decoration: none; display: block; margin-bottom: 10px; transition: 0.3s; }
+.footer-link:hover { color: var(--gold); padding-left: 5px; }
+.social-icons a { color: white; font-size: 1.5rem; margin-right: 20px; transition: 0.3s; display: inline-block; }
+.social-icons a:hover { color: var(--gold); transform: scale(1.2); }
+.footer-bottom { border-top: 1px solid #333; margin-top: 40px; padding-top: 20px; font-size: 0.9rem; color: #d1d1d1; }
 
-.product-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(138, 5, 24, 0.15);
-}
-
-.product-card img {
-    height: 250px;
-    object-fit: cover;
-}
-
-.btn-danger {
-    background-color: var(--main-red);
-    border: none;
-    border-radius: 50px;
-    padding: 10px 25px;
-    font-weight: 600;
-}
-
-/* ФУТЕР */
-.footer-custom {
-    background-color: #1a1a1a;
-    color: #ffffff; /* Було #f8f8f8 - зробили чистий білий */
-    padding: 60px 0 20px;
-    margin-top: 80px;
-}
-
-.footer-logo {
-    filter: brightness(0) invert(1); /* Робить лого білим, якщо воно темне */
-    margin-bottom: 20px;
-}
-
-.footer-heading {
-    font-family: 'Playfair Display', serif;
-    color: var(--gold);
-    margin-bottom: 25px;
-    font-size: 1.4rem;
-}
-
-.footer-link {
-    color: #e0e0e0; /* Було #bbb - тепер світліше для контрасту */
-    text-decoration: none;
-    display: block;
-    margin-bottom: 10px;
-    transition: 0.3s;
-}
-
-.footer-link:hover {
-    color: var(--gold); /* Золотистий при наведенні виглядає краще */
-    padding-left: 5px;
-}
-
-.social-icons a {
-    color: white;
-    font-size: 1.5rem;
-    margin-right: 20px;
-    transition: 0.3s;
-    display: inline-block;
-}
-
-.social-icons a:hover {
-    color: var(--gold);
-    transform: scale(1.2);
-}
-
-.footer-bottom {
-    border-top: 1px solid #333;
-    margin-top: 40px;
-    padding-top: 20px;
-    font-size: 0.9rem;
-    color: #d1d1d1; /* Було #777 - тепер значно краще читається */
-}
-/* Стилі для нового блоку подій */
-.events-section {
-    border-top: 1px solid #eee;
-}
-
-.event-card {
-    transition: all 0.3s ease;
-    border: 1px solid transparent;
-}
-
-.event-card:hover {
-    transform: translateY(-10px);
-    border-color: var(--gold);
-    box-shadow: 0 15px 30px rgba(138, 5, 24, 0.1) !important;
-}
-
-.icon-box i {
-    display: inline-block;
-    margin-bottom: 15px;
-    /* Якщо FontAwesome не підтримує rings-wedding, можна замінити на fa-heart */
-}
-
-.event-card h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.25rem;
-    margin-bottom: 15px;
-}
+/* Події */
+.events-section { border-top: 1px solid #eee; }
+.event-card { transition: 0.3s; border: 1px solid transparent; }
+.event-card:hover { transform: translateY(-10px); border-color: var(--gold); box-shadow: 0 15px 30px rgba(138, 5, 24, 0.1) !important; }
+.event-card h3 { font-family: Georgia, serif; font-size: 1.25rem; margin-bottom: 15px; }
