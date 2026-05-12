@@ -183,7 +183,7 @@ h1, h2, h3, .navbar-brand {
     /* Якщо FontAwesome не підтримує rings-wedding, можна замінити на fa-heart */
 }
 
-.event-card h4 {
+.event-card h3 {
     font-family: 'Playfair Display', serif;
     font-size: 1.25rem;
     margin-bottom: 15px;
