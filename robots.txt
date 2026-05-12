@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /drafts/
+Allow: /
+
+Sitemap: https://lukianetsliza25.github.io/seo-audit-project/sitemap.xml
