@@ -62,7 +62,7 @@ h1, h2, h3, .navbar-brand {
 
 /* Шапка сторінки (Banner) */
 .page-heading {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('img/11.jpg') center/cover;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('img/11.webp') center/cover;
     padding: 80px 0;
     color: white;
     text-align: center;
