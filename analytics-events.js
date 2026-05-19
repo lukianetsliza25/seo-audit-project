@@ -8,6 +8,14 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+  document.querySelectorAll('a[href^="mailto:"]').forEach(function(el) {
+    el.addEventListener('click', function() {
+        gtag('event', 'email_click', {
+        'email_address': this.getAttribute('href').replace('mailto:', '')
+        });
+    });
+    });
+
   document.querySelectorAll('.social-link').forEach(function (el) {
     el.addEventListener('click', function () {
       gtag('event', 'social_click', {
